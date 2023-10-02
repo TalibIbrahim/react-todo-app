@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-width {
+  width: 750px;
+}
+
+#style-1::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+}
+
+#style-1::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 50px;
+
+  background-color: rgb(23, 23, 23);
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .card-width {
+    width: 500px;
+  }
+  .add-btn {
+    transform: translateY(-50px);
+  }
+  .del-btn {
+    transform: translateY(-6px);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .card-width {
+    width: 350px;
+  }
+  .add-btn {
+    transform: translateY(20px);
+    width: 150px;
+  }
+  .del-btn {
+    transform: translateY(-7px);
+  }
+}
